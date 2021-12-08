@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name victor-exp)(type KiCad)(uri ${KIPRJMOD}/victor-exp.pretty)(options "")(descr ""))
+)
