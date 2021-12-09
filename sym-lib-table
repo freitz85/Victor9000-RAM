@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name Victor9000)(type Legacy)(uri ${KIPRJMOD}/Victor9000.lib)(options "")(descr ""))
+)
