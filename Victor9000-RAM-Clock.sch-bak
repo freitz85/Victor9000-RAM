@@ -6,7 +6,7 @@ encoding utf-8
 Sheet 1 1
 Title "Victor 9000 RAM Expansion"
 Date ""
-Rev ""
+Rev "v01"
 Comp ""
 Comment1 ""
 Comment2 ""
@@ -995,21 +995,21 @@ $EndComp
 Text Label 3650 5250 0    50   ~ 0
 ALE
 Text Label 4850 5050 0    50   ~ 0
-A7
-Text Label 4850 4950 0    50   ~ 0
-A4
-Text Label 4850 4850 0    50   ~ 0
-A3
-Text Label 4850 4750 0    50   ~ 0
 A0
-Text Label 4850 4650 0    50   ~ 0
+Text Label 4850 4950 0    50   ~ 0
 A1
-Text Label 4850 4550 0    50   ~ 0
+Text Label 4850 4850 0    50   ~ 0
 A2
+Text Label 4850 4750 0    50   ~ 0
+A3
+Text Label 4850 4650 0    50   ~ 0
+A7
+Text Label 4850 4550 0    50   ~ 0
+A6
 Text Label 4850 4450 0    50   ~ 0
 A5
 Text Label 4850 4350 0    50   ~ 0
-A6
+A4
 Wire Wire Line
 	4800 5050 5050 5050
 Wire Wire Line
@@ -1130,7 +1130,7 @@ L Victor9000:Expansion_Connector H1
 U 1 1 61B7B5EB
 P 1600 3850
 F 0 "H1" H 3000 3550 50  0001 C CNN
-F 1 "Expansion_Connector" H 1600 2350 50  0000 C CNN
+F 1 "Expansion_Connector" H 1600 2000 50  0000 C CNN
 F 2 "victor-exp:Victor Expansion Edge Connector" H 2450 4050 50  0001 C CNN
 F 3 "" H 2450 4050 50  0001 C CNN
 	1    1600 3850
@@ -1152,18 +1152,14 @@ $EndComp
 $Comp
 L power:GND #PWR02
 U 1 1 61FD5D7E
-P 2550 5200
-F 0 "#PWR02" H 2550 4950 50  0001 C CNN
-F 1 "GND" H 2555 5027 50  0000 C CNN
-F 2 "" H 2550 5200 50  0001 C CNN
-F 3 "" H 2550 5200 50  0001 C CNN
-	1    2550 5200
+P 2550 5600
+F 0 "#PWR02" H 2550 5350 50  0001 C CNN
+F 1 "GND" H 2555 5427 50  0000 C CNN
+F 2 "" H 2550 5600 50  0001 C CNN
+F 3 "" H 2550 5600 50  0001 C CNN
+	1    2550 5600
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2100 5150 2550 5150
-Wire Wire Line
-	2550 5150 2550 5200
 Wire Wire Line
 	2100 4850 2550 4850
 Wire Wire Line
@@ -1253,7 +1249,6 @@ NoConn ~ 1050 4450
 NoConn ~ 1050 4550
 NoConn ~ 1050 4650
 NoConn ~ 1050 4750
-NoConn ~ 2100 4950
 NoConn ~ 2100 5050
 NoConn ~ 4800 1900
 Wire Wire Line
@@ -1283,4 +1278,29 @@ F 3 "http://www.ti.com/lit/gpn/sn74LS11" H 5700 3100 50  0001 C CNN
 	3    5700 3100
 	1    0    0    1   
 $EndComp
+NoConn ~ 2100 5150
+Wire Wire Line
+	2100 4950 2550 4950
+Wire Wire Line
+	2550 4950 2550 4850
+Connection ~ 2550 4850
+Wire Wire Line
+	2100 5250 2550 5250
+Wire Wire Line
+	2550 5250 2550 5350
+Wire Wire Line
+	2100 5350 2550 5350
+Connection ~ 2550 5350
+Wire Wire Line
+	2550 5350 2550 5450
+Wire Wire Line
+	2100 5450 2550 5450
+Connection ~ 2550 5450
+Wire Wire Line
+	2550 5450 2550 5550
+Wire Wire Line
+	2100 5550 2550 5550
+Connection ~ 2550 5550
+Wire Wire Line
+	2550 5550 2550 5600
 $EndSCHEMATC
