@@ -1,3 +1,4 @@
 (fp_lib_table
   (lib (name victor-exp)(type KiCad)(uri ${KIPRJMOD}/victor-exp.pretty)(options "")(descr ""))
+  (lib (name eec)(type KiCad)(uri ${KIPRJMOD}/IC_Maxim_DS1315-5+/eec.pretty)(options "")(descr ""))
 )
