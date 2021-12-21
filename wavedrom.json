@@ -1,0 +1,18 @@
+{signal: [
+  {name: 'CLK15', wave: 'n.................'},
+  {name: 'CLK5', wave: 'hl.hl.hl.hl.hl.hl.'},
+  {name: 'PHASE2', wave: 'hl.....h........l..', phase:0.4},
+  {name: 'CSEN', wave: 'lh..............l..', phase:0.2},
+  {name: 'ALE', wave: 'lx1.x0......'},
+  {name: 'A8-A19', wave: '=..=.'},
+  {name: 'BD0-BD7', wave: 'z..=z'},
+  {name: 'BD0-BD7', wave: 'z........=z'},
+  {name: 'BD0-BD7', wave: 'z.....=.....z'},
+  {name: 'BD0-BD7', wave: 'z........=..'},
+  {},
+  {name: '/DLATCH', wave: 'l..h....x.0.......', phase:0.5},
+  {name: 'CLK5', wave: 'hl.hl.hl.hl.hl.hl.'},
+  {name: 'ALE', wave: 'lx1.x0......'},
+  {name: '/XACK', wave: 'h......l..h..', phase:0.5},
+  {name: 'RDY', wave: 'h......l..h..'},
+]}
